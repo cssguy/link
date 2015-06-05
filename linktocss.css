@@ -1,0 +1,55 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border: 1px solid red;
+}
+
+.contact-form {
+  position: fixed;
+  top: 50px;
+  width: 300px;
+  height: 100px;
+  background: #FFDB7E;
+  margin: 0 0 0 -285px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.contact-form:hover {
+  margin: 0;
+  cursor: pointer;
+}
+
+.contact-form img {
+  position: absolute;
+  left: 10px;
+  top: 3px;
+}
+
+.contact-form p {
+  padding: 0;
+  margin: 12px 20px 0 120px;
+  color: #206481;
+}
+
+.contact-form:after {
+  content: 'Обратная связь'; 
+  color: #fff; 
+  background: #AA5585;
+  position: absolute;
+  right: -42px; 
+  bottom: 42px;
+  font-size: 13px;
+  padding: 0 7px 2px;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.contact-form:hover:after {
+  cursor: pointer;
+}
